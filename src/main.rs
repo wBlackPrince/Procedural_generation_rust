@@ -47,15 +47,6 @@ fn spawn_basic_scene(
             let z: f32 = z as f32;
             let FREQUENC = (rand::thread_rng().gen_range(16, 20) as f32)/100.0;
             let AMP = (rand::thread_rng().gen_range(8, 10) as f32)/10.0;
-
-            // to very ideal terrain
-            //let y: f32 = (x*FREQUENCE).sin().round() + (z*FREQUENCE).cos().round() + (x*FREQUENCE).cos().round() + (z*FREQUENCE).sin().round();
-
-            // good terrain
-            /*let y: f32 = ((x*FREQUENC).sin() * AMP).round()+ 
-                ((x*FREQUENC).cos() * AMP).round() +
-                ((z*FREQUENC).cos() * AMP).round() +
-                ((z*FREQUENC).sin()*AMP).round();*/
             
             // good terrain
             let y: f32 = ((x*FREQUENC).sin() * AMP).round()+ 
